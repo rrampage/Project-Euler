@@ -1,6 +1,6 @@
 #Project Euler - Problem 6
 #Language: Python2
-#Time of Completion: 18-08-2012  IST
+#Time of Completion: 18-08-2012 01:36 IST
 
 #Square of sum vs Sum of squares
 
