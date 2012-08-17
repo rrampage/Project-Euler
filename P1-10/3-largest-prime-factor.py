@@ -34,7 +34,10 @@ def popper(arr):
         a.remove(c[x])
     return a
 
-a = factor(sys.argv[1])
-print a
-b = popper(a)
-print max(b)
+def largestprimefactor():
+    a = factor(sys.argv[1])
+    print a
+    b = popper(a)
+    print max(b)
+
+largestprimefactor()
