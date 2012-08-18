@@ -6,13 +6,35 @@
 
 #-------IMPORT SPACE-----------#
 import sys
+import math
+
+
+def quickSum(n):
+    sum = 2
+    for x in xrange(3,n,2):
+	sum = sum+(isPrime(x)*x)
+    return sum
+
+def isPrime(x):
+    rr = int(math.sqrt(x))+1
+    for y in xrange(3,rr,2):
+        if x%y == 0 :
+	    return 0
+    return 1
+
+
+u = int(sys.argv[1])
+print quickSum(u)
+
+#----DEPRECIATED--------#
 
 def primeLister(n,l = [2,3,5,7,11,13]):
     rem = max(l)+1
     x = max(l)
+    rr = int(math.sqrt(n))
     while max(l)<n :
         x = x+2
-        for y in l :
+        for y in xrange(3,rr,2):
             if x%y == 0 :
                 rem = x
                 break
@@ -37,5 +59,4 @@ def bootstrapper(n):
 	    k.remove(max(k))
         return k
     return primeLister(n)
-
-print(sum(bootstrapper(sys.argv[1])))
+#print sum(primeLister(u))
