@@ -1,6 +1,6 @@
 #Project Euler - Problem 10
 #Language: Python2
-#Time of Completion: 18-08-2012 05:27 IST
+#Time of Completion: 18-08-2012 06:07 IST
 
 #Sum of All Primes upto 2 million
 
