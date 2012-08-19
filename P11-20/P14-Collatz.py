@@ -1,6 +1,6 @@
 #Project Euler - Problem 14
 #Language: Python2
-#Time of Completion: 19-08-2012 14:52 IST
+#Time of Completion: 19-08-2012 18:02 IST
 
 #The Collatz Conjecture
 
