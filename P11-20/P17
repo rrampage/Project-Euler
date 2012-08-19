@@ -1,0 +1,12 @@
+#Project Euler - Problem 16
+#Language: Python2
+#Time of Completion: 20-08-2012 03:33 IST
+
+#One Thousand = 11
+#Hundred appears 900 times Therefore 900*7  = 6300
+#And appears 99*9 = 891*3 = 2673
+# one-nine = 36 * 100 = 3600
+# one- nine in units place = 36*90 = 3600 - 360 = 3240
+# ten - nineteen = 70*10 = 700
+#twenty - ninety each appears 10*10 times = 100*46 = 4600
+= 4600 + 3240 + 700 + 3600 + 2673 + 6300 + 11
