@@ -7,6 +7,50 @@
 #-----IMPORT SPACE------
 import sys
 
+#----NEW!------------------------#
+#----Using Dynamic Programming---#
+
+def chainLinks(num):
+
+    yield num
+
+    while num > 1:
+
+        if num % 2 == 0:
+            num /= 2
+        else:
+            num = 3*num+1
+
+        yield num
+
+n = int(sys.argv[1])
+lengths = []
+linkDictionary = {}
+
+for start in xrange(1,n):
+
+    currentLinks = []
+    numLinks = 0
+
+    for link in chainLinks(start):
+
+        if link in linkDictionary:
+            numLinks += linkDictionary[link]
+            break
+
+        numLinks += 1
+
+    linkDictionary[start] = numLinks
+
+    lengths.append((start, numLinks))
+
+
+start, length = max(lengths, key=lambda key: key[1])
+
+print start
+
+#-----DEPRECIATED!--------#
+#Simple brute force approach
 def collatz(n):
     """Returns number of steps required to reach 1 from n"""
     a = 1
@@ -19,18 +63,14 @@ def collatz(n):
         a = a+1
     return a
 
-maxi = 10
-num = 13
+#maxi = 10
+#num = 13
 
-n = int(sys.argv[1])
-
-for x in xrange(1,n):
+#for x in xrange(1,n):
     j = collatz(x)
     if j>maxi :       
         maxi = j
 	num = x
-	print x
-
-print num
-print maxi
-
+	
+#print num
+#print maxi
