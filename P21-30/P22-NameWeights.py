@@ -1,6 +1,6 @@
 #Project Euler - Problem 22
 #Language: Python2
-#Time of Completion: 20-08-2012 14:00 IST
+#Time of Completion: 21-08-2012 02:10 IST
 
 #Name Weights!
 
@@ -27,3 +27,8 @@ for x in range(len(sum2)):
     sum3 = sum3 + (x+1)*sum2[x][1]
 
 print sum3
+
+#Really succinct code
+#names = map(lambda x: x.strip('"'), open('P22-Data.txt').read().strip().split(','))
+#names.sort()
+#print sum(sum(map(lambda x: ord(x)-64, names[index])) * (index+1) for index in range(len(names)))
