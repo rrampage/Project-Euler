@@ -90,4 +90,5 @@ int main() {
     pop_primes(ptr);
     printf("Seq Euler : %u\n", quad_prime_seq(1, 41, ptr));
     printf("%d\n", longest_quad_prime_seq(ptr));
+    free(ptr);
 }
