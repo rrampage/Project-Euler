@@ -7,7 +7,7 @@ Find the number d between 1 and 1000 s.t 1/d has longest recurring cycle
 My approach:
         A cycle can be spotted using regex. 1/d is always of form 0.\d+
         If it has a recurring cycle, 0.\d+?(\d+?)\1\d+
-        I need to calculate the division to at least as many digits as 2 * d (as my regex checks for at least 2 repitions using look ahead)
+        I need to calculate the division to at least as many digits as 2 * d (as my regex checks for at least 2 repetitions using look ahead)
         Python's decimal module gives arbitrary precision division
 
 Efficient approach:
